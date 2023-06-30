@@ -1,15 +1,18 @@
 .calcu{
+    border-radius: 15px;
     padding: 10px;
    width: 450px;
     height: 400px;
-    background-color: rgb(124, 189, 192);
+    background-color: rgb(174, 149, 228);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:15px;
     grid-template-rows: 1fr 1fr 1fr 1fr ;
-    
+    box-shadow: 2px 2px 0px black, 2px 2px 0px white;
 }
+
 .btn{
+    border-radius: 44px;
     font-size: 35px;
     width: 50%;
     justify-self: center;
@@ -23,6 +26,7 @@
     transform: scale(0.95);
 }
 .inputs{
+    font-weight: 900;
     border: 0;
     outline: none;
     padding: 10px;
@@ -30,10 +34,36 @@
     width: 70%;
     justify-self: center;
     align-self: center;
-    
+ border-radius: 5px;   
 }
+
+.hint{
+    display: none;
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    padding: 12px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-family: monospace;
+    letter-spacing: 1.2px;
+ position: relative;
+ left:50%;
+}
+
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   -webkit-appearance: none;
   
+}
+.name{
+    font-size: 65px;
+    font-family: monospace;
+}
+.my{
+    position: absolute;
+    bottom: 10px;
+
+
 }
